@@ -22,11 +22,11 @@ input {
     border: 0;
     box-sizing: border-box;
     color: #eee;
-    font-size: 18px;
+    font-size: 22px;
     height: 100%;
     outline: 0;
     padding: 4px 20px 0;
-    width: 80%;
+    width: 90%;
 }
 
 .cut {
@@ -38,7 +38,7 @@ input {
     top: -20px;
     transform: translateY(0);
     transition: transform 200ms;
-    width: 76px;
+    width: 96px;
 }  
 
 .input:focus ~ .cut,
@@ -50,6 +50,7 @@ input {
   color: #C5CAE9;
   font-family: sans-serif;
   left: 20px;
+  font-size: 22px;
   line-height: 14px;
   pointer-events: none;
   position: absolute;
@@ -60,7 +61,7 @@ input {
 
 .input:focus ~ .placeholder,
 .input:not(:placeholder-shown) ~ .placeholder {
-  transform: translateY(-30px) translateX(10px) scale(0.75);
+  transform: translateY(-25px) translateX(10px) scale(0.75);
 }
 
 .input:not(:placeholder-shown) ~ .placeholder {
