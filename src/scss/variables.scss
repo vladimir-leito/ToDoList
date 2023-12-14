@@ -1,0 +1,11 @@
+// Variables 
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+@mixin headText {
+    font-family: 'Manrope';
+    font-weight: 700;
+}
+$bodyText: 'Manrope';
+$textColor: #d0d5f5;
+$bgColor: #303F9F;
+$bgLightColor: #03A9F4;
