@@ -1,10 +1,56 @@
+@import "../../scss/variables.scss";
+
 .task {
-    background-color: darkgoldenrod;
-    color: black;
+  display: block;
+  word-wrap: break-word;
+  width: 100%;
+  padding: 10px 20px 10px 20px;
+  margin-top: 20px;
+  font-family: $bodyText;
+  font-size: 18px;
+  background-color: #3f51b5;
+  border-radius: 10px;
+  color: $textColor;
 }
 
-.task-group {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.task {
+  display: flex;
+  flex-direction: row;
+  &__content {
+    &__left {
+      display: flex;
+      width: 90%;
+      position: relative;
+      gap: 10px;
+      align-items: center;
+      &__text {
+        width: 80%;
+      }
+    }
+    &__right {
+        margin: 0 auto;
+    }
+  }
+}
+
+.remove__btn {
+  background-color: $bgColor;
+  border-radius: 8px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  cursor: pointer;
+  font-size: 25px;
+  height: 32px;
+  outline: 0;
+  text-align: center;
+  aspect-ratio: 1 / 1;
+  transition: all 0.23s ease-in;
+  &:hover {
+    background-color: #03a9f4;
+  }
+}
+
+.button:active {
+  background-color: #03a9f4;
 }

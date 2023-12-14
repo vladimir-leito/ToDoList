@@ -1,16 +1,18 @@
-import './InputForm.scss';
-import { useState } from 'react';
+import { useState } from "react";
 
-const InputForm = ({addTask}) => {
-  const [task, setTask] = useState('');
+import Plus from "../../assets/icons/plus";
+import "./InputForm.scss";
+
+const InputForm = ({ addTask }) => {
+  const [task, setTask] = useState("");
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
     addTask({
       name: task,
-      id: Date.now()
-    })
-    setTask('');
+      id: Date.now(),
+    });
+    setTask("");
   };
 
   return (
@@ -31,7 +33,7 @@ const InputForm = ({addTask}) => {
             Enter task
           </label>
           <button className="submit" type="submit">
-            +
+            <Plus width="15px" height="15px" />
           </button>
         </div>
       </form>
