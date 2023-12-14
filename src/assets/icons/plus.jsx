@@ -1,11 +1,11 @@
 const Plus = ({ width, height }) => {
   return (
     <svg
-      fill="#000000"
+      fill="#d0d5f5"
       version="1.1"
       id="Capa_1"
-      width="800px"
-      height="800px"
+      width={width}
+      height={height}
       viewBox="0 0 45.402 45.402"
       xml:space="preserve"
     >
@@ -20,3 +20,5 @@ const Plus = ({ width, height }) => {
     </svg>
   );
 };
+
+export default Plus;
