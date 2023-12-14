@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import Plus from "../../assets/icons/plus";
+import Plus from "../../assets/icons/plus.jsx";
 import "./InputForm.scss";
 
 const InputForm = ({ addTask }) => {
