@@ -10,6 +10,7 @@ const InputForm = ({ addTask }) => {
     e.preventDefault();
     addTask({
       name: task,
+      checked: false,
       id: Date.now(),
     });
     setTask("");

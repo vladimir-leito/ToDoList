@@ -7,7 +7,7 @@ const Plus = ({ width, height }) => {
       width={width}
       height={height}
       viewBox="0 0 45.402 45.402"
-      xml:space="preserve"
+      xmlSpace="preserve"
     >
       <g>
         <path

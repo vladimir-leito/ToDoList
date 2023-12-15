@@ -18,6 +18,12 @@ function App() {
     setTasks(prevState => prevState.filter(task => task.id !== id))
   }
 
+  const toggleTask = (id) => {
+    setTasks(prevState => prevState.map(item => (
+      item.id === id ? {...item, checked: !item.checked} : item
+    )))
+  }
+
   return (
     <div className="container">
       <header>
@@ -25,7 +31,7 @@ function App() {
       </header>
       <InputForm addTask={addTask}/>
       {tasks && (
-        <TaskList tasks={tasks} deleteTask={deleteTask}/>
+        <TaskList tasks={tasks} deleteTask={deleteTask} toggleTask={toggleTask}/>
       )}
     </div>
   );
