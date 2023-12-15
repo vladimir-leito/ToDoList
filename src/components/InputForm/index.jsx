@@ -25,6 +25,9 @@ const InputForm = ({ addTask }) => {
             type="text"
             placeholder=""
             value={task}
+            required
+            maxLength={80}
+            autoFocus
             onChange={(e) => {
               setTask(e.target.value);
             }}
@@ -34,7 +37,7 @@ const InputForm = ({ addTask }) => {
             Enter task
           </label>
           <button className="submit" type="submit">
-            <Plus width="15px" height="15px" />
+            <Plus width="1.2rem" height="1.2rem" />
           </button>
         </div>
       </form>

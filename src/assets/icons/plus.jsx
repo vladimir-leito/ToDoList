@@ -1,13 +1,10 @@
 const Plus = ({ width, height }) => {
   return (
     <svg
-      fill="#d0d5f5"
-      version="1.1"
-      id="Capa_1"
+      // fill="#d0d5f5"
       width={width}
       height={height}
       viewBox="0 0 45.402 45.402"
-      xmlSpace="preserve"
     >
       <g>
         <path

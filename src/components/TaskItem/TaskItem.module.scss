@@ -8,10 +8,11 @@
   padding: 10px 20px 10px 20px;
   margin-top: 20px;
   font-family: $bodyText;
-  font-size: 18px;
+  font-size: $fsize;
   background-color: $bgMidColor;
   border-radius: 10px;
   color: $textColor;
+  transition: all 0.15s ease-in;
   &__content {
     &__left {
       display: flex;
@@ -32,7 +33,7 @@
           width: 20px;
           &::after {
             display: inline-block;
-            border: 2px solid $textColor;
+            border: 2px solid $bgLightColor;
             border-top: none;
             border-right: none;
             border-radius: 1px;
@@ -55,33 +56,39 @@
       }
       .text__cont {
         width: 80%;
+        padding-bottom: 1px;
         text-decoration: none;
       }
     }
     &__right {
+      display: flex;
+      align-items:center;
       margin: 0 auto;
     }
   }
 }
 
 .remove__btn {
+  display: flex;
+  align-items:center;
+  justify-content: center;
   background-color: $bgColor;
   border-radius: 5px;
   border: 0;
   box-sizing: border-box;
-  color: #eee;
+  fill: $textColor;
   cursor: pointer;
-  font-size: 25px;
   height: 32px;
   outline: 0;
-  text-align: center;
   aspect-ratio: 1 / 1;
   transition: all 0.23s ease-in;
   &:hover {
     background-color: $bgLightColor;
+    fill: $bgColor;
   }
 }
 
 .button:active {
   background-color: $bgLightColor;
+  fill: $bgColor;
 }

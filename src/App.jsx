@@ -27,7 +27,7 @@ function App() {
   return (
     <div className="container">
       <header>
-        Your ToDo
+        ToDo <span>It!</span>
       </header>
       <InputForm addTask={addTask}/>
       {tasks && (
