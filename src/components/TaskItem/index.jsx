@@ -13,6 +13,7 @@ const TaskItem = ({ task, deleteTask, toggleTask }) => {
 
   const textDynamicStyle = {
     textDecoration: checked ? 'line-through' : 'none',
+    textDecorationColor: checked ? '#ff9b9b' : 'none',
   }
 
   const taskDynamicStyle = {
@@ -43,7 +44,7 @@ const TaskItem = ({ task, deleteTask, toggleTask }) => {
         <button
           className={styles.remove__btn}
           onClick={() => deleteTask(task.id)}>
-          <Minus width="15px" height="15px" />
+          <Minus width="1.2rem" height="1.2rem" />
         </button>
       </div>
     </li>
