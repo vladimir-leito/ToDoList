@@ -2,7 +2,7 @@
 
 .todo {
   background: rgba($color: $bgColor, $alpha: 1);
-  border-radius: 20px;
+  border-radius: 10px;
   box-sizing: border-box;
   margin-top: 30px;
   height: 80px;
@@ -22,12 +22,12 @@
   width: 100%;
 }
 
-input {
-  background-color: #3f51b5;
-  border-radius: 12px;
+.input {
+  background-color: $bgMidColor;
+  border-radius: 5px;
   border: 0;
   box-sizing: border-box;
-  color: #eee;
+  color: $textColor;
   font-family: $bodyText;
   font-size: 22px;
   height: 100%;
@@ -37,7 +37,7 @@ input {
 }
 
 .cut {
-  background-color: #303f9f;
+  background-color: $bgColor;
   border-radius: 10px;
   height: 20px;
   left: 20px;
@@ -54,7 +54,7 @@ input {
 }
 
 .placeholder {
-  color: #c5cae9;
+  color: #c5cae962;
   font-family: sans-serif;
   left: 20px;
   font-family: $bodyText;
@@ -77,13 +77,13 @@ input {
 }
 
 .input:focus ~ .placeholder {
-  color: #03a9f4;
+  color: $bgLightColor;
 }
 
 .submit {
   margin: 0 auto;
-  background-color: #3f51b5;
-  border-radius: 12px;
+  background-color: $bgMidColor;
+  border-radius: 5px;
   border: 0;
   box-sizing: border-box;
   color: #eee;
@@ -95,10 +95,10 @@ input {
   aspect-ratio: 1 / 1;
   transition: all 0.23s ease-in;
   &:hover {
-    background-color: #03a9f4;
+    background-color: $bgLightColor;
   }
 }
 
 .submit:active {
-  background-color: #03a9f4;
+  background-color: $bgLightColor;
 }
