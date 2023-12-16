@@ -1,0 +1,32 @@
+@import '../../scss/variables.scss';
+
+.wrapper {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 3px;
+  background-color: $bgMidColor;
+  border-radius: 50px;
+  .btn {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    height: 30px;
+    font-family: $bodyText;
+    font-size: $fsizeLittle;
+    color: $textColor;
+    background-color: $bgColor;
+    border-radius: 50px;
+    border: solid 2px $bgColor;
+    cursor: pointer;
+    outline: 0;
+    &.light {
+      border: solid 2px $bgLightColor;
+      color: $bgLightColor;
+    }
+    &:hover {
+      border: solid 2px $bgLightColor;
+      color: $bgLightColor;
+    }
+  }
+}
