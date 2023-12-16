@@ -62,7 +62,7 @@
     }
     &__right {
       display: flex;
-      align-items:center;
+      align-items: center;
       margin: 0 auto;
     }
   }
@@ -70,12 +70,11 @@
 
 .remove__btn {
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: center;
   background-color: $bgColor;
   border-radius: 5px;
   border: 0;
-  box-sizing: border-box;
   fill: $textColor;
   cursor: pointer;
   height: 32px;

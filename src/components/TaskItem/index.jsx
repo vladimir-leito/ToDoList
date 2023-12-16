@@ -14,11 +14,11 @@ const TaskItem = ({ task, deleteTask, toggleTask }) => {
   const textDynamicStyle = {
     textDecoration: checked ? 'line-through' : 'none',
     textDecorationColor: checked ? '#ff9b9b' : 'none',
-  }
+  };
 
   const taskDynamicStyle = {
-    opacity: checked ? '0.7' : '1'
-  }
+    opacity: checked ? '0.7' : '1',
+  };
 
   return (
     <li className={styles.task} style={taskDynamicStyle}>
@@ -35,7 +35,10 @@ const TaskItem = ({ task, deleteTask, toggleTask }) => {
           <label htmlFor={task.id} className={styles.label}></label>
         </div>
         <div className={styles.text__cont}>
-          <label htmlFor={task.id} className={styles.text} style={textDynamicStyle}>
+          <label
+            htmlFor={task.id}
+            className={styles.text}
+            style={textDynamicStyle}>
             {task.name}
           </label>
         </div>
