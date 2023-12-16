@@ -1,10 +1,12 @@
 # Preview
 Project always updates after every commit on Vercel. You can follow the link for handling new updates: [Click here](to-do-list-three-opal.vercel.app)
 
-How to run the project
+<hr>
+
+# How to run the project
 Firstly, you should download the project to start it locally:
 
-git clone https://github.com/leito-VDS/ToDoList.git
+```git clone https://github.com/leito-VDS/ToDoList.git```
 Secondly, follow this command to start the project:
 
-npm i & npm run dev
+```npm i & npm run dev```
